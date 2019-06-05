@@ -8,7 +8,7 @@ class DemoController extends Controller
 {
     public function demo()
     {
-        $seederCode = file_get_contents(database_path('seeds/databaseSeeder.php'));
+        $seederCode = file_get_contents(database_path('seeds/DatabaseSeeder.php'));
         $postCode = file_get_contents(app_path('Post.php'));
         $commentCode = file_get_contents(app_path('Comment.php'));
         $authorCode = file_get_contents(app_path('Author.php'));
